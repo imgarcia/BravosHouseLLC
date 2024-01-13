@@ -1,0 +1,102 @@
+$maroon: #661a2b;
+$background: #efe4cd;
+$tan: #a17f35;
+$text: #5e1828;
+
+$border-radius: 7px;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  // background: linear-gradient(180deg, #eee0c2, darken($tan, 10%) );
+  // background: linear-gradient(180deg, #efe4cd, #efe4cd, darken($tan, 10%) );
+  background: linear-gradient(180deg, $background, darken($background, 20%));
+  color: $text;
+  font-family: serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.app-wrapper {
+  max-width: 1366px;
+  height: calc(100vh - 50px);
+  background-color: #efefef;
+  border: 1px solid darken(#efefef, 10);
+  border-radius: 7px;
+  box-shadow: 0 3px 10px #afafaf;
+  text-align: center;
+  margin: 25px auto;
+  margin: auto;
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  padding: 10px;
+
+  .app-logo {
+    width: 350px;
+  }
+}
+
+footer {
+  margin-top: auto;
+  padding: 25px;
+}
+
+.app-body {
+  flex: 1;
+  padding: 0 25px 25px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .box {
+    background-color: $background;
+    border: 1px solid darken($background, 10);
+    border-radius: $border-radius;
+    padding: 50px;
+  }
+
+  h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+
+  p {
+    font-size: 18px;
+    font-weight: 500;
+    margin: 5px 0 15px;
+    line-height: 1.2;
+  }
+}
+
+/* BUTTONS */
+.link-button {
+  display: inline-block;
+  background-color: $maroon;
+  border-radius: $border-radius;
+  color: #ffffff;
+  padding: 10px 15px;
+  text-decoration: none;
+  transition: all 300ms ease-in-out;
+
+  &:hover {
+    background-color: lighten($maroon, 10%);
+  }
+}
