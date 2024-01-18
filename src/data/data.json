@@ -1,0 +1,19 @@
+{
+  "questions": [
+    {
+      "id": "1",
+      "question": "Who is the NBA's all time scoring leader?",
+      "answer": "LeBron James"
+    },
+    {
+      "id": "2",
+      "question": "Who is NBA's all time 3 point leader?",
+      "answer": "Stephen Curry"
+    },
+    {
+      "id": "3",
+      "question": "Who is NBA's all time assist leader?",
+      "answer": "John Stockton"
+    }
+  ]
+}
