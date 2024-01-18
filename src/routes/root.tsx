@@ -14,7 +14,6 @@ export const Root = createBrowserRouter(
         <Route path="/questions" element={<Questions />} />
         <Route path="*" element={<Error />} />
       </Route>
-      <h1>TESTING</h1>
     </Route>
   )
 )
